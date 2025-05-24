@@ -1,16 +1,46 @@
-# tune_player_app
+# 🎵 Tune Player App
 
-A new Flutter project.
+A simple Flutter app that plays musical notes.  
+Built as a beginner-friendly project using Flutter and Dart.
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+- Clean UI with 7 colored containers (notes)
+- Each container plays a unique musical note when tapped
+- AppBar with the title "Tune App"
+- Great practice for Flutter layout, gestures, and sound integration
 
-A few resources to get you started if this is your first Flutter project:
+## 🖼️ Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![tune_player_app](https://github.com/user-attachments/assets/ba05fd4f-9823-4532-aeb8-620d8a29d981)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Getting Started
+
+### Prerequisites
+- Flutter SDK
+- Dart SDK
+- A device/emulator to run the app
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/AhmedEssammm/tune-player-app.git
+cd tune-player-app
+```
+
+2. Get dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run
+```
+
+## 🔧 Tech Stack
+
+- Flutter
+- Dart
+- `audioplayers` package for playing sound
