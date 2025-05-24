@@ -1,31 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:tune_player_app/models/tune_model.dart';
 import 'package:tune_player_app/widgets/tune_item.dart';
 
 class TuneView extends StatelessWidget {
   const TuneView({super.key});
-  final List<Color> tuneColors = const [
-    Color(0xFFF44336),
-    Color(0xFFF89800),
-    Color(0xFFFEEB3B),
-    Color(0xFF4CAF50),
-    Color(0xFF2F9688),
-    Color(0xFF2896F3),
-    Color(0xFF9C27B0),
+  final List<TuneModel> tunes = const [
+    TuneModel(color: Color(0xFF012a4a), sound: 'note1.wav'),
+    TuneModel(color: Color(0xFF013a63), sound: 'note2.wav'),
+    TuneModel(color: Color(0xFF01497c), sound: 'note3.wav'),
+    TuneModel(color: Color(0xFF2a6f97), sound: 'note4.wav'),
+    TuneModel(color: Color(0xFF61a5c2), sound: 'note5.wav'),
+    TuneModel(color: Color(0xFF89c2d9), sound: 'note6.wav'),
+    TuneModel(color: Color(0xFFa9d6e5), sound: 'note7.wav'),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Tune App'),
-        backgroundColor: Color(0xFF253238),
-        foregroundColor: Colors.white,
+        title: const Text('Tune App'),
+        backgroundColor: const Color(0xFFd9dcd6),
         elevation: 0,
       ),
       body: Column(
-        children: tuneColors
+        children: tunes
             .map(
-              (e) => TuneItem(color: e),
+              (e) => TuneItem(tune: e),
             )
             .toList(),
       ),
